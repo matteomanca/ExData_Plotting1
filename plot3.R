@@ -1,4 +1,3 @@
-
 df <- read.csv("household_power_consumption.txt", header=TRUE, na.strings="?",sep=";")
 
 sub_df <- df[which(as.Date(df$Date,  "%d/%m/%Y" )==as.Date("1/2/2007", "%d/%m/%Y" ) | as.Date(df$Date, "%d/%m/%Y")==as.Date("2/2/2007", "%d/%m/%Y")), ]
@@ -36,7 +35,7 @@ text(c(0,sample_first_day,sample_first_day + sample_second_day), par("usr")[3] -
         labels=days,
         xpd=T, cex=1, offset = 1)
 
-axis(2, las=1, cex.axis=0.8)
+axis(2, las=1, cex.axis=1)
 
 # Create box around plot
 box()

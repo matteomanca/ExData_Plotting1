@@ -1,4 +1,3 @@
-
 df <- read.csv("household_power_consumption.txt", header=TRUE, na.strings="?",sep=";")
 
 sub_df <- df[which(as.Date(df$Date,  "%d/%m/%Y" )==as.Date("1/2/2007", "%d/%m/%Y" ) | as.Date(df$Date, "%d/%m/%Y")==as.Date("2/2/2007", "%d/%m/%Y")), ]
